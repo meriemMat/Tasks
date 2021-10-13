@@ -1,5 +1,5 @@
 export interface Task {
-    id?: number ;
+    postId?: number ;
     title: string;
     description: string;
     reminder: boolean;

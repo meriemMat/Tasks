@@ -1,4 +1,6 @@
-<div class="task">
-<h3>{{task.title}} <fa-icon [icon]="faTimes" [style.color]="'red'"></fa-icon></h3>
-<p>{{task.description}}</p>
+<div class="task" [ngClass]="{reminder: task.reminder }" >
+    <h3>{{task.title}}
+        <fa-icon [icon]="faTimes" [style.color]="'red'" (click)="onDelete(task)"></fa-icon>
+    </h3>
+    <p>{{task.description}}</p>
 </div>
