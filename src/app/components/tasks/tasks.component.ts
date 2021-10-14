@@ -20,4 +20,10 @@ export class TasksComponent implements OnInit {
       .subscribe(() =>
         (this.tasks = this.tasks.filter(t => t.postId !== task.postId)));
   }
+  toggleReminder(task: Task) {
+    this.taskService
+      .toggleReminder(task)
+      .subscribe((task) =>
+        (console.log(task)));
+  }
 }
