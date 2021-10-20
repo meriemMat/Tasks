@@ -1,0 +1,17 @@
+<form *ngI
+.........f="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="text">Task</label>
+        <input type="text" name="title" id="title" [(ngModel)]="title" placeholder="Add Task"/>
+    </div>
+    <div class="form-control">
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description"[(ngModel)]="description"  placeholder="Add Description"/>
+    </div>
+    <div class="form-control form-control-check">
+        <label for="reminder"> Set Reminder</label>
+        <input type="checkbox" name="reminder" [(ngModel)]="reminder" id="reminder" />
+    </div>
+    <input type="submit" value="Save Task" class="btn btn-block">
+
+</form>
